@@ -20,7 +20,6 @@ const formControl =
   };
 
 export default function FilterMoviesCard(props) {
-
   const [genres, setGenres] = useState([{ id: '0', name: "All" }])
 
   useEffect(() => {
