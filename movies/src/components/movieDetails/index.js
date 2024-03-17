@@ -55,7 +55,7 @@ const MovieDetails = ({ movie }) => {  // Don't miss this!
         />
         <Chip
           icon={<StarRate />}
-          label={`${movie.vote_average} (${movie.vote_count}`}
+          label={`${movie.vote_average} (${movie.vote_count})`}
         />
         <Chip label={`Released: ${movie.release_date}`} />
       </Paper>
@@ -68,6 +68,20 @@ const MovieDetails = ({ movie }) => {  // Don't miss this!
           <Chip label="Production Countries" sx={{...chip}} color="primary" />
         </li>
         {movie.production_countries.map((g) => (
+          <li key={g.name}>
+            <Chip label={g.name} sx={{...chip}} />
+          </li>
+        ))}
+      </Paper>
+
+      <Paper 
+        component="ul" 
+        sx={{...root}}
+      >
+        <li>
+          <Chip label="Production Companies" sx={{...chip}} color="primary" />
+        </li>
+        {movie.production_companies.map((g) => (
           <li key={g.name}>
             <Chip label={g.name} sx={{...chip}} />
           </li>
