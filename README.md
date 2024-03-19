@@ -39,11 +39,11 @@ Replace 'your API value' with your tmdb api key from https://www.themoviedb.org
 
 [ List the __new routes__ supported by your app and state the associated page.]
 
-+ /movies/mustwatch - displays must watch movies that have been selected from the upcoming page.
-+ /movies/nowplaying - displays all movies currently playing in theatres.
-+ /movies/toprated - displays top rated movies from highest rated to lowest.
-+ /movies/trending - displays movies that are trending for that current day.
-+ /movies/popular - displays movies by popularity.
++ /movies/mustwatch - (Must Watch Page) displays must watch movies that have been selected from the upcoming page.
++ /movies/nowplaying - (Now Playing Page) displays all movies currently playing in theatres.
++ /movies/toprated - (Top Rated Page) displays top rated movies from highest rated to lowest.
++ /movies/trending - (Trending Page) displays movies that are trending for that current day.
++ /movies/popular - (Popular Page) displays movies by popularity.
 
 [If relevant, state what aspects of your app are protected (i.e. require authentication) and what is public.]
 
