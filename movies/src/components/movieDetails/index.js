@@ -9,6 +9,7 @@ import Fab from "@mui/material/Fab";
 import Typography from "@mui/material/Typography";
 import Drawer from "@mui/material/Drawer";
 import MovieReviews from "../movieReviews";
+import Divider from '@mui/material/Divider';
 
 
 const root = {
@@ -26,10 +27,12 @@ const MovieDetails = ({ movie }) => {  // Don't miss this!
 
   return (
     <>
+    <Divider>
       <Typography variant="h5" component="h3">
         Overview
       </Typography>
-
+      </Divider>
+      &nbsp;
       <Typography variant="h6" component="p">
         {movie.overview}
       </Typography>
