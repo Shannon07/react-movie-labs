@@ -4,9 +4,9 @@ import PageTemplate from '../components/templateActorListPage';
 import { useQuery } from 'react-query';
 import Spinner from '../components/spinner';
 
-const HomePage = (props) => {
+const ActorsPage = (props) => {
 
-  const {  data, error, isLoading, isError }  = useQuery('discover', getActors)
+  const {  data, error, isLoading, isError }  = useQuery('actors', getActors)
 
   if (isLoading) {
     return <Spinner />
@@ -17,11 +17,6 @@ const HomePage = (props) => {
   }  
   const actors = data.results;
 
-  // Redundant, but necessary to avoid app crashing.
-  const favorites = actors.filter(m => m.favorite)
-  localStorage.setItem('favorites', JSON.stringify(favorites)) //dont think need
-
-
   return (
     <PageTemplate
       title="Discover Actors"
@@ -30,4 +25,4 @@ const HomePage = (props) => {
     />
 );
 };
-export default HomePage;
+export default ActorsPage;
